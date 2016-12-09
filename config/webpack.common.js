@@ -20,7 +20,7 @@ const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 const HMR = helpers.hasProcessFlag('hot');
 const METADATA = {
   title: 'ng2-admin - Angular 2 Admin Template',
-  description: 'Free Angular 2 and Bootstrap 4 Admin Template',
+  description: 'Free Angular 2 and Bootstrap 3 Admin Template',
   baseUrl: '/',
   isDevServer: helpers.isWebpackDevServer()
 };
@@ -176,7 +176,7 @@ module.exports = function (options) {
         /* File loader for supporting images, for example, in CSS files.
          */
         {
-          test: /\.(jpg|png|gif)$/,
+          test: /\.(jpg|png|gif|jpeg)$/,
           use: 'file-loader'
         }
       ]
@@ -243,7 +243,7 @@ module.exports = function (options) {
        */
       new CopyWebpackPlugin([
         { from: 'src/assets', to: 'assets' },
-        { from: 'src/meta'}
+        { from: 'src/meta' }
       ]),
 
       /*
@@ -300,22 +300,23 @@ module.exports = function (options) {
       }),
 
       new webpack.ProvidePlugin({
-        $: "jquery",
-        jQuery: "jquery",
-        "window.jQuery": "jquery",
-        Tether: "tether",
-        "window.Tether": "tether",
-        Tooltip: "exports-loader?Tooltip!bootstrap/js/dist/tooltip",
-        Alert: "exports-loader?Alert!bootstrap/js/dist/alert",
-        Button: "exports-loader?Button!bootstrap/js/dist/button",
-        Carousel: "exports-loader?Carousel!bootstrap/js/dist/carousel",
-        Collapse: "exports-loader?Collapse!bootstrap/js/dist/collapse",
-        Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown",
-        Modal: "exports-loader?Modal!bootstrap/js/dist/modal",
-        Popover: "exports-loader?Popover!bootstrap/js/dist/popover",
-        Scrollspy: "exports-loader?Scrollspy!bootstrap/js/dist/scrollspy",
-        Tab: "exports-loader?Tab!bootstrap/js/dist/tab",
-        Util: "exports-loader?Util!bootstrap/js/dist/util"
+        '$': 'jquery',
+        'jQuery': 'jquery',
+        'window.$': 'jquery',
+        'window.jQuery': 'jquery',
+        'Tether': 'tether',
+        'window.Tether': 'tether',
+        'Tooltip': 'exports-loader?Tooltip!bootstrap/js/dist/tooltip',
+        'Alert': 'exports-loader?Alert!bootstrap/js/dist/alert',
+        'Button': 'exports-loader?Button!bootstrap/js/dist/button',
+        'Carousel': 'exports-loader?Carousel!bootstrap/js/dist/carousel',
+        'Collapse': 'exports-loader?Collapse!bootstrap/js/dist/collapse',
+        'Dropdown': 'exports-loader?Dropdown!bootstrap/js/dist/dropdown',
+        'Modal': 'exports-loader?Modal!bootstrap/js/dist/modal',
+        'Popover': 'exports-loader?Popover!bootstrap/js/dist/popover',
+        'Scrollspy': 'exports-loader?Scrollspy!bootstrap/js/dist/scrollspy',
+        'Tab': 'exports-loader?Tab!bootstrap/js/dist/tab',
+        'Util': 'exports-loader?Util!bootstrap/js/dist/util'
       }),
 
       // Fix Angular 2

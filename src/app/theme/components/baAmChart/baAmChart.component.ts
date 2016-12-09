@@ -2,7 +2,7 @@ import {Component, ViewChild, ViewEncapsulation, Input, Output, ElementRef, Even
 
 import {BaThemePreloader} from '../../../theme/services';
 
-import './baAmChart.loader.ts';
+import './baAmChart.loader';
 import {BaAmChartThemeService} from './baAmChartTheme.service';
 
 @Component({

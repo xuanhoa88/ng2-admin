@@ -1,1 +1,2 @@
-export const Chartist = require('chartist');
+import * as Chartist from 'chartist';
+export default Chartist;

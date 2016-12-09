@@ -1,1 +1,2 @@
-export const Chart = require('chart.js');
+import * as Chart from 'chart.js';
+export default Chart;

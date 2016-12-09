@@ -1,7 +1,7 @@
 import {Component, ViewEncapsulation} from '@angular/core';
-
+import '../../../theme/components/baFullCalendar/baFullCalendar.loader';
 import {CalendarService} from './calendar.service';
-declare var jQuery;
+
 @Component({
   selector: 'calendar',
   encapsulation: ViewEncapsulation.None,

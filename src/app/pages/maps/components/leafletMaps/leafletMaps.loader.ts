@@ -1,2 +1,2 @@
-require('leaflet-map');
-require('style-loader!leaflet/dist/leaflet.css');
+import 'leaflet-map';
+import 'leaflet/dist/leaflet.css';

@@ -1,7 +1,7 @@
 import {Component, ViewChild, ViewEncapsulation, Input, Output, ElementRef, EventEmitter} from '@angular/core';
 
-import './baFullCalendar.loader.ts';
-declare var jQuery;
+import './baFullCalendar.loader';
+
 @Component({
   selector: 'ba-full-calendar',
   template: require('./baFullCalendar.html'),

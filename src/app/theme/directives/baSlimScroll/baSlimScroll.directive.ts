@@ -1,7 +1,7 @@
-import {Directive, Input, Output, ElementRef, EventEmitter} from '@angular/core';
+import {Directive, Input, ElementRef} from '@angular/core';
 
-import './baSlimScroll.loader.ts';
-declare var jQuery;
+import './baSlimScroll.loader';
+
 @Directive({
   selector: '[baSlimScroll]'
 })

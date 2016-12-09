@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
-import './ckeditor.loader.ts';
+import './ckeditor.loader';
 
 @Component({
   selector: 'ckeditor-component',
