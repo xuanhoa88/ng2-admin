@@ -1,52 +1,50 @@
-[![Build Status](https://travis-ci.org/akveo/ng2-admin.svg?branch=master)](https://travis-ci.org/akveo/ng2-admin)
-[![Join the chat at https://gitter.im/ng2-admin/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ng2-admin/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Dependency Status](https://david-dm.org/akveo/ng2-admin.svg)](https://david-dm.org/akveo/ng2-admin)
+[![CircleCI](https://circleci.com/gh/r-park/angular2-webpack-seed.svg?style=shield&circle-token=889e179b1930b3f3291bbf27a4da6df98726edf0)](https://circleci.com/gh/r-park/angular2-webpack-seed)
 
-# Admin panel framework based on Angular 2, Bootstrap 4 and Webpack
 
-Admin template made with :heart:  by [Akveo team](http://akveo.com/). Follow us on [Twitter](https://twitter.com/akveo_inc) to get latest news about this template first!
+# Angular2 Webpack Seed
 
-### Demo
 
-<a target="_blank" href="http://akveo.com/ng2-admin/"><img src="http://i.imgur.com/QK9AzHj.jpg" width="600" alt="Sky Blue"/></a>
+- Angular 2.0.1
+- Jasmine
+- Karma
+- SASS
+- Typescript 2
+- Webpack 2
 
-<a target="_blank" href="http://akveo.com/ng2-admin/">Live Demo</a>
 
-## Angular 1.x version
-Here you can find Angular 1.x based version: [Blur Admin](http://akveo.github.io/blur-admin/)
- 
-## Documentation
-Installation, customization and other useful articles: https://akveo.github.io/ng2-admin/
+#### Features
+- Inline external HTML templates into typescript component files (optional)
+- Inline and autoprefix external SCSS files into typescript component files (optional)
+- Inject style tags into `index.html` (optional)
+- Inject script tags into `index.html`
+- Bundle and minify release builds
 
-## Based on
-Angular 2, Bootstrap 4, Webpack and lots of awesome modules and plugins
 
-## How can I support developers?
-- Star our GitHub repo :star:
-- Create pull requests, submit bugs, suggest new features or documentation updates :wrench:
-- Follow us on [Twitter](https://twitter.com/akveo_inc) :feet:
-- Like our page on [Facebook](https://www.facebook.com/akveo/) :thumbsup:
+Getting Started
+---------------
 
-## Can I hire you guys?
-Yes!  Visit [our homepage](http://akveo.com/) or simply leave us a note to [contact@akveo.com](mailto:contact@akveo.com). We will be happy to work with you!
+#### Prerequisites
+- `node >= 6`
 
-## Features
-* TypeScript
-* Webpack
-* Responsive layout
-* High resolution
-* Bootstrap 4 CSS Framework
-* Sass
-* Angular 2
-* jQuery
-* Charts (Chartist, Chart.js)
-* Maps (Google, Leaflet, amMap)
-* and many more!
+#### Quick Start
 
-##License
-[MIT](LICENSE.txt) license.
+```shell
+$ npm install
+$ npm start
+```
 
-### From akveo
 
-Enjoy :metal:
-We're always happy to hear your feedback!
+Usage
+-----
+
+|Script|Description|
+|---|---|
+|npm start|Start webpack development server @ **localhost:3000**|
+|npm run build|Lint, test, and build the application to **./target**|
+|npm run lint|Lint **.ts** and **.js** files|
+|npm run lint:js|Lint **.js** files with eslint|
+|npm run lint:ts|Lint **.ts** files with tslint|
+|npm run server|Start express server @ **localhost:3000** to serve built artifacts from **./target**|
+|npm test|Run unit tests with Karma and Jasmine|
+|npm run test:watch|Run unit tests with Karma and Jasmine; watch for changes to re-run tests|
+|npm version|Bump package.json version, generate CHANGELOG.md, git commit and tag (see [npm version](https://docs.npmjs.com/cli/version))|
