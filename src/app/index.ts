@@ -2,12 +2,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import * as bowser from 'bowser';
 
 import { HomeModule } from '../home';
 import { ProjectsModule } from '../projects';
 import { AppComponent } from './components/app';
-
+declare var bowser: any;
+console.log(bowser);
 @NgModule({
   bootstrap: [
     AppComponent

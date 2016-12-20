@@ -15,3 +15,7 @@ import '@angular/router';
 // RxJS
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/mergeMap';
+
+//
+import 'bowser';
+import 'jquery';

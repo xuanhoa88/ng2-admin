@@ -217,12 +217,24 @@ config.plugins = [
             } : {}
         }
     }),
-    new webpack.ProvidePlugin({}),
     new ContextReplacementPlugin(
         /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
         path.resolve('src')
     ),
-    new webpack.ProvidePlugin({}),
+    /**
+     * Automatically loaded modules. 
+     * Module (value) is loaded when the identifier (key) is used as free variable in a module
+     *
+     * See: https://github.com/webpack/html-loader#provideplugin
+     */
+    new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery',
+        'window.$': 'jquery',
+        'window.bowser': 'bowser',
+        'bowser': 'bowser'
+    }),
     // Fix Angular 2
     new NormalModuleReplacementPlugin(
         /facade(\\|\/)async/,
